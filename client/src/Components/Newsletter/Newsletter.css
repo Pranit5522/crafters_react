@@ -1,0 +1,78 @@
+.newsletter-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .newsletter-image {
+    width: 100%;
+    height: 800px; 
+    object-fit: cover;
+    display: block;
+  }
+  
+  .newsletter-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fdf8f3;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .newsletter-content h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+  }
+  .newsletter-content p{
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    font-weight:100;
+  }
+
+  .newsletter-signup {
+    margin-top: 30px;
+    background-color: #fdf8f3;
+    padding: 15px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .newsletter-signup input {
+    flex: 1;
+    padding: 10px;
+    background-color: #fdf8f3;
+    border: none;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+  }
+  
+  .newsletter-signup button {
+    color: #191919;
+    border: none;
+    border-left: 1px solid #7d7d7d;
+    background-color: #fdf8f3;
+    padding: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .newsletter-signup input::placeholder {
+    color: #7d7d7d; 
+  }
+  
+  
+  

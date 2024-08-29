@@ -1,0 +1,21 @@
+.slider-wrapper {
+    margin: 0; 
+    width: 100%; 
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  }
+  
+  .slick-next{
+    color: #191919;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  
