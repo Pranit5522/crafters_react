@@ -6,7 +6,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 function Item(props){
     const percentOff = ((props.oldPrice - props.newPrice)/props.newPrice)*100;
-    const fileName ="1_1_item.jpg";
+    const fileName ="./Assets/product_images/"+"1_1_item.jpg";
     const { loading, error, image } = useImage(fileName);
     return(
         <div className="item">

@@ -8,7 +8,7 @@ function useImage(fileName){
     useEffect(() => {
         const fetchImage = async () => {
             try {
-                const response = await import(/* @vite-ignore */"./Assets/product_images/"+fileName)
+                const response = await import(/* @vite-ignore */fileName)
                 setImage(response.default)
             } catch (err) {
                 setError(err)

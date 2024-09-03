@@ -1,7 +1,6 @@
 .navbar {
-    width: 95%;
     z-index: 1000;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +39,6 @@
   background-color: #fdf8f3;
   transition: width 0.3s ease;
 }
-
 .nav-link:hover::after {
   width: 100%;
 }
@@ -73,4 +71,9 @@
   font-size: 14px;
   background-color: #191919;
   color:#fdf8f3;
+}
+
+.brand-name-link {
+  text-decoration: none;
+  color: inherit;
 }
