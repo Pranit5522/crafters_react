@@ -13,7 +13,7 @@ function Category(props){
 
     return(
         <div className="category">
-            <img src={image} alt="SOFAS" className="category-image" />
+            <img src={image} alt={props.name} className="category-image" />
             <div className="category-content">
                 <h2>{props.name}</h2>
                 <Button variant="outlined"><EastIcon fontSize="large"/></Button>

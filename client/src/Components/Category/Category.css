@@ -7,21 +7,22 @@
   
   .category-image {
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: cover;
     object-position: top center;
   }
   
   .category-content {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
+    height: 100%;
     transform: translate(-50%, -50%);
     z-index: 1;
     color: #fdf8f3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     text-align: center;
   }
@@ -41,9 +42,6 @@
     background-color: transparent;
     cursor: pointer;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .category button:hover{

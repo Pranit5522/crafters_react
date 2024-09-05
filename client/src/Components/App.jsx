@@ -7,6 +7,7 @@ import Categories from '../Pages/Categories'
 import Product from '../Pages/Product'
 import ShopCategory from '../Pages/ShopCategory'
 import Footer from './Footer/Footer'
+
 function App() {
   return (
     <div>

@@ -17,7 +17,7 @@ function Navbar(){
           </div>
           
           <div className="navbar-right">
-            <li className="nav-link">Login</li>
+          <Link to='/login' className="brand-name-link"> <li className="nav-link">Login</li></Link>
             <span>
               <ShoppingBagIcon fontSize="large" />
             </span>

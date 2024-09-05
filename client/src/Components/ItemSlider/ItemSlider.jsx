@@ -50,6 +50,7 @@ function ItemSlider({ items }) {
             newPrice={item.new_price}
             oldPrice={item.old_price}
             name={item.product_name}
+            categoryId={item.category_id}
           />
         ))}
       </Slider>

@@ -1,15 +1,20 @@
 .footer {
     background-color: #fdf8f3;
     color: #191919;
-    padding: 40px 20px;
+    padding: 0px 20px;
     text-align: center;
     margin: auto;
   }
   
+  hr{
+    border-color: #191919;
+    margin: 0;
+  }
   .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-top: 2px solid #191919;
     gap: 20px;
   }
   
@@ -57,7 +62,7 @@
   
   .footer-bottom {
     margin-top: 20px;
-    border-top: 1px solid #7d7d7d;
+    border-top: 2px solid #191919;
     padding-top: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;

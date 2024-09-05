@@ -16,8 +16,8 @@ body {
 .favorites {
     display: flex;
     align-items: flex-start;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     width: 99%; 
-    margin-bottom: 40px;
 }
 
 .intro {
@@ -75,6 +75,7 @@ body {
 /* Categories page styling */
 .categories{
     background-color: #fdf8f3;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 .categories > h2{
@@ -93,4 +94,78 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Sign up login */
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.signup_page > h2{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+} 
+.signup_page{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #E6DDD4;
+    padding: 25px;
+    gap: 20px;
+    width: 350px;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    border: 1px #a6a6a6 solid;
+    background-color: #fdf8f3;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+#check{
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.button{
+    background-color: #191919;
+    height: 40px;
+    color: #fdf8f3;
+    border: none;
+    width: 100%;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input::placeholder{
+    color: #a6a6a6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login{
+    display: flex;
+    color: #6c6c68;
+    gap: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: flex-start;
+}
+
+.login-link{
+    color: #191919;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
 }
