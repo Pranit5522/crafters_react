@@ -7,8 +7,9 @@ function ShopCategory(props){
         <div>
             <div className="shopcategory-indexSort">  
                 <p>
-                    <span>Showing 1-12</span> out of 
+                    <span>Showing 1-5</span> out of 5 
                 </p>
+                
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 .hero-element{
     width: 100%; 
-    height: 900px;
-    overflow: hidden; 
+    height: 800px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -17,12 +17,12 @@
     width: 70%;
     padding-left: 40px;
     position: absolute;
-    top: 25%;
+    top: 5%;
 }
 .banner-items h1{   
     color: #fdf8f3;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 .banner-items button{
     width: 200px;

@@ -98,6 +98,11 @@ body {
     padding-bottom: 40px;
 }
 
+.banner{
+    width: 100%;
+    height: auto;
+}
+
 /* Sign up login */
 
 .sign{

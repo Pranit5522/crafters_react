@@ -1,11 +1,11 @@
 .navbar {
     z-index: 1000;
-    /* position: absolute; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
     background-color: #6C6C67;
+    position: relative;
 }
 .navbar-left, .navbar-right{
   display: flex;
@@ -13,6 +13,21 @@
   justify-content: space-around;
   gap: 50px;
 }
+
+.nav-dropdown{
+  background-color: #313131;
+  position: absolute;
+  padding: 0;
+  width: 97.5%;
+  transition: height 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-dropdown li{
+  font-size: larger;
+  margin:18px;
+}
+
 .navbar-left{
   padding-left: 40px;
 }
@@ -28,6 +43,7 @@
   cursor: pointer;
   font-size: 30px;
   text-decoration: none;
+  width: max-content;
 }
 .nav-link::after {
   content: ''; 
