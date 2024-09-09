@@ -1,15 +1,18 @@
 .faqs {
     padding: 35px 18px;
-    border-bottom: 1px solid #7d7d7d;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    background-color: #E6DDD4;
+    margin: 18px;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
   }
   
   .dropdown {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
   }
   
   .question {

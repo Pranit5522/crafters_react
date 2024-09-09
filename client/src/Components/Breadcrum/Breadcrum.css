@@ -1,0 +1,12 @@
+.breadcrum{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.path{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #191919;
+    text-decoration: none;
+}
+

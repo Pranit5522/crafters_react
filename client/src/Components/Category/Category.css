@@ -3,7 +3,14 @@
     width: 20%;
     overflow: hidden;
     min-width: 300px;
+    box-sizing: border-box;
+    box-shadow: 0 1.5em 2em rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
   }
+
+  .category:hover {
+    transform: scale(1.05);
+}
   
   .category-image {
     width: 100%;

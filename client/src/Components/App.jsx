@@ -14,19 +14,15 @@ function App() {
       <BrowserRouter>
         <div className='sidespace'>
         <Navbar />
-        </div>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/cart' element={<Cart />}
-            />
+          <Route path='/cart' element={<Cart />}/>
           <Route path='/login' element={<Signup_Login />} />
-          <Route path='/categories' element={<Categories />}>
-            <Route path=':categoryId' element={<ShopCategory />} />
-          </Route>
-          <Route path='/product' element={<Product />}>
-            <Route path=':productId' element={<Product />} />  
-          </Route>
+          <Route path='/categories' element={<Categories />} />
+          <Route path='/categories/:categoryName' element={<ShopCategory />} />
+          <Route path='/product/:productId' element={<Product />} />
         </Routes>
+        </div>
       </BrowserRouter>
       <div className='sidespace'>
       <Footer />
@@ -35,4 +31,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -11,8 +11,8 @@ function FAQ(props) {
   }
 
   return (
-    <div className="faqs">
-      <div className="dropdown" onClick={handleClick}>
+    <div className="faqs" onClick={handleClick}>
+      <div className="dropdown" >
         <p className="question">
           {props.question}
         </p>

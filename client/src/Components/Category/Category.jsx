@@ -3,7 +3,7 @@ import "./Category.css"
 import Button from '@mui/material/Button'
 import useImage from "../useImage";
 import EastIcon from '@mui/icons-material/East';
-
+import { Link } from "react-router-dom";
 function Category(props){
     const fileName = "./Assets/"+ props.id +".png";
     const { loading, error, image } = useImage(fileName);
@@ -16,7 +16,7 @@ function Category(props){
             <img src={image} alt={props.name} className="category-image" />
             <div className="category-content">
                 <h2>{props.name}</h2>
-                <Button variant="outlined"><EastIcon fontSize="large"/></Button>
+                <Link to={`/categories/${props.name}`}><Button variant="outlined"><EastIcon fontSize="large"/></Button></Link>
             </div>
         </div>
     )

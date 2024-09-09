@@ -15,9 +15,12 @@
 }
 .banner-items{
     width: 70%;
+    height: 800px;
     padding-left: 40px;
     position: absolute;
-    top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .banner-items h1{   
     color: #fdf8f3;

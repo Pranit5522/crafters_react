@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import NavDropdown from "./NavDropdown";
+import { useLocation } from "react-router-dom";
 
 function Navbar(){
   
+  const location = useLocation();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [menuOpen, setMenuOpen] = useState(false);
   
@@ -34,8 +36,8 @@ function Navbar(){
             </li> </div>}
           {screenWidth>768 && <div className="navbar-left">
             <Link to='/categories' className="brand-name-link"><li className="nav-link">Collection</li></Link>
-            <li className="nav-link">FAQs</li>
-            <li className="nav-link">About</li>
+            <a href={location.pathname !== "/" ? "/" : "#faq"} className="nav-link">FAQs</a>
+            <a href={location.pathname !== "/" ? "/" : "#about"} className="nav-link">About</a>
           </div>}
           
           <div className="navbar-center">

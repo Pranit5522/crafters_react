@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function ItemSlider({ items }) {
+
+  const favs = items.filter((item) => ((item.id%5) < 1));
   const settings = {
     dots: true, 
     infinite: true, 
@@ -41,9 +43,9 @@ function ItemSlider({ items }) {
   };
 
   return (
-    <div className="slider-wrapper" style={{ width: "75%" }}>
+    <div className="slider-wrapper">
       <Slider {...settings}>
-        {items.map((item) => (
+        {favs.map((item) => (
           <Item
             key={item.id}
             id={item.id}

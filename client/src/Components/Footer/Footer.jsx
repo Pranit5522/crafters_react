@@ -3,7 +3,7 @@ import "./Footer.css";
 import logo from '../Assets/logo.png'
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-logo">
           <img src={logo} alt="Crafters Logo" />
@@ -11,10 +11,10 @@ function Footer() {
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/categories">Products</a></li>
+            <li><a href="/">Contact</a></li>
           </ul>
         </div>
         <div className="footer-contact">

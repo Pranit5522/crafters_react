@@ -6,9 +6,10 @@ import About from "../Components/About/About";
 import FAQ from "../Components/FAQ/FAQ";
 import Newsletter from "../Components/Newsletter/Newsletter";
 
+
 function Home(){
     return(
-        <div className="sidespace">
+        <div>
             <Hero />
             <div className="favorites">
                 <div className="intro">
@@ -16,14 +17,14 @@ function Home(){
                         <h2>FAVORITES</h2>
                         <p>We have made a selection of our customers' favorite products</p>
                     </div>
-                    <a href="">SEE ALL</a>
+                    <a href="/categories">SEE ALL</a>
                 </div>
                 <ItemSlider 
                     items={products}
                 />
             </div>
             <About />
-            <h2 className="faq-heading">FAQ</h2>
+            <h2 className="faq-heading" id="faq">FAQ</h2>
             <FAQ 
                 question="How to place an order in an online store?"
                 answer="Choose a product on our website. Add it to the cart. Specify your details, method, and address of delivery. Pay for the order (the final price will be indicated on the payment page). Specify the delivery method."
