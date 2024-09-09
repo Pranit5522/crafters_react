@@ -40,6 +40,7 @@ p {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    min-height: 3em;
     text-overflow: ellipsis;
 }
 
@@ -53,8 +54,8 @@ p {
     width: 20px;
 }
 
-.black {
-    color: #191919;
+.yellow {
+    color: #ffcc00;
 }
 
 .grey {

@@ -18,10 +18,10 @@ function Item(props){
                     <div className="price-cart">
                         <div className="rating-price-section">
                             <div className="rating">
-                                <StarIcon className="star black"/>
-                                <StarIcon className="star black"/>
-                                <StarIcon className="star black"/>
-                                <StarIcon className="star black"/>
+                                <StarIcon className="star yellow"/>
+                                <StarIcon className="star yellow"/>
+                                <StarIcon className="star yellow"/>
+                                <StarIcon className="star yellow"/>
                                 <StarIcon className="star grey"/>
                             </div>
                             <div className="new-price-section"> 

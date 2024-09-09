@@ -1,0 +1,60 @@
+.productPrice{
+    padding: 20px;
+    color: #191919;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.productPrice > h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.productRating{
+    font-size: 18px;
+    display: flex;
+    gap: 4px;
+}
+
+.price_discount{
+    padding: 18px 0;
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    padding-bottom: 0;
+}
+
+.product-price{
+    color: #ff5757;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.product-discount{
+    background-color: #191919;
+    color: #fdf8f3;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 6px ;
+    border-radius: 18px;
+}
+
+.description{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.cart-button{
+    background-color: #191919;
+    color: #fdf8f3;
+    display: inline-block;
+    padding: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.cart-button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
