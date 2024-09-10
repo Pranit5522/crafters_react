@@ -1,6 +1,9 @@
 import React from "react";
 import "./About.css"
 import image from "../Assets/about.jpg"
+import best from "../Assets/best-seller.png"
+import hand from "../Assets/handcraft.png"
+import deli from "../Assets/delivery.png"
 
 function About(){
     return(
@@ -17,14 +20,17 @@ function About(){
             </div>
             <div className="prop-container">
                 <div className="prop">
+                    <img src={best} alt="" className="feature-img" />
                     <h2>EXCLUSIVE DESIGN</h2>
                     <p>Our furniture pieces are more than just functional; they are designed to be exceptional. Each item in our collection reflects a unique blend of artistry and innovation, crafted to stand out and complement your space. We prioritize exclusive designs that embody both timeless elegance and modern sophistication, ensuring that your furniture not only enhances your home but also serves as a statement of style.</p>
                 </div>
                 <div className="prop">
+                    <img src={hand} alt="" className="feature-img" />
                     <h2>HANDMADE WORK</h2>
                     <p>Quality craftsmanship is at the heart of everything we do. Our furniture is meticulously handmade by skilled artisans who bring passion and expertise to every piece. We believe in preserving traditional techniques while incorporating contemporary design elements to create furniture that is not only beautiful but also durable and enduring. Each item is a testament to the dedication and skill of our craftsmen.</p>
                 </div>
                 <div className="prop">
+                    <img src={deli} alt="" className="feature-img" />
                     <h2>CAREFUL DELIVERY</h2>
                     <p>We understand that the delivery of your new furniture is just as important as its design and craftsmanship. At Crafters, we ensure that each piece arrives in pristine condition through our careful delivery process. Our team handles every step with the utmost care, from packing to transport, to guarantee that your furniture reaches you safely and promptly. Your satisfaction is our priority, and we strive to make your experience seamless from start to finish.</p>
                 </div>

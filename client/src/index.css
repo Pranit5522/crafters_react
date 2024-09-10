@@ -219,10 +219,14 @@ body {
 /* Product page */
 .image-price{
     display: flex;
-    gap: 10px;
+    gap: 40px;
 }
 @media screen and (max-width: 800px) {
     .image-price{
         flex-direction: column;
     }
+}
+
+.product{
+    padding: 20px;
 }

@@ -1,12 +1,23 @@
 .breadcrum{
     padding: 20px 0px;
     display: flex;
-    align-items: center;
 }
 
+.arrow{
+    padding-top: 2px;
+}
 .path{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #191919;
+    white-space: nowrap;
     text-decoration: none;
 }
 
+.last-name{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #191919;
+}
