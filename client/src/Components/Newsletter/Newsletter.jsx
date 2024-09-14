@@ -1,11 +1,10 @@
 import React from "react";
 import "./Newsletter.css";
-import newsletterImage from "../Assets/newsletter.png"; // Import your image
 
 function Newsletter() {
   return (
     <div className="newsletter-container">
-      <img className="newsletter-image" src={newsletterImage} alt="newsletter" />
+      <img className="newsletter-image" src="./Assets/newsletter.png" alt="newsletter" />
       <div className="newsletter-content">
         <h1>EXCLUSIVE NEWS & CONTENT</h1>
         <p>Subscribe to our newsletter to keep up to date with all the events of the service</p>

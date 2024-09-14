@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Hero.css'
-import banner from "../Assets/banner.png"
+
 function Hero(){
+    const banner = './Assets/banner.png'
     return(
         <div className="hero-element">
             <img className="banner-image" src={banner} alt="banner image" />

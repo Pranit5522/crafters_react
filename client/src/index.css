@@ -23,6 +23,7 @@ body {
     align-items: stretch;
     width: 99%; 
     height: 100%;
+    margin-top: 18px;
 }
 
 @media screen and (max-width: 1000px) {

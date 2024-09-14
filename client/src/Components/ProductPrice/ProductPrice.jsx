@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./ProductPrice.css";
 import StarIcon from '@mui/icons-material/Star';
 import Description from "../Description/Description";
+import { ShopContext } from "../../Context/ShopContext"
 
 function ProductPrice({ product }) {
 
+    const {addToCart} = useContext(ShopContext);
     const percentOff = ((product.old_price - product.new_price) / product.old_price) * 100;
     const [isExpanded, setExpanded] = useState(false);
     const [qty, setQty] = useState(1);
 
     function handleClick() {
-        $(".qty-caret").toggleClass("caret-rotate");
         setExpanded(prevValue => !prevValue);
     }
 
@@ -43,7 +44,7 @@ function ProductPrice({ product }) {
 
             <span className="qty" onClick={handleClick}>
                 <span>QTY {qty} </span>
-                <div className={`qty-caret ${isExpanded ? "caret-rotate" : ""}`}></div>
+                <div className={`qty-caret ${isExpanded && "caret-rotate"}`}></div>
                 
                 {isExpanded && (
                     <select className="qty-dropdown" value={qty} onChange={handleQtyChange} size="5">
@@ -57,7 +58,7 @@ function ProductPrice({ product }) {
             </span>
 
             <br />
-            <div className="cart-button"> ADD TO CART</div>
+            <div className="cart-button" onClick={()=>{addToCart(product.id, qty)}}> ADD TO CART</div>
 
             <Description />
         </div>

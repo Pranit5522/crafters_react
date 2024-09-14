@@ -1,11 +1,13 @@
 import React from "react";
 import "./About.css"
-import image from "../Assets/about.jpg"
-import best from "../Assets/best-seller.png"
-import hand from "../Assets/handcraft.png"
-import deli from "../Assets/delivery.png"
 
 function About(){
+    
+    const image =  "./Assets/about.jpg"
+    const best =  "./Assets/best-seller.png"
+    const hand =  "./Assets/handcraft.png"
+    const deli =  "./Assets/delivery.png"
+    
     return(
         <div>
             <div className="flex-container">

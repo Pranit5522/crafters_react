@@ -7,9 +7,10 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import NavDropdown from "./NavDropdown";
 import { useLocation } from "react-router-dom";
 
-function Navbar(){
+function Navbar({cartCount}){
   
   const location = useLocation();
+
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [menuOpen, setMenuOpen] = useState(false);
   
@@ -46,11 +47,13 @@ function Navbar(){
           
           <div className="navbar-right">
           <Link to='/login' className="brand-name-link"> <li className="nav-link">Login</li></Link>
-            <span>
+          <Link to="/cart">
+            <span className="cart-icon">
               <ShoppingBagIcon fontSize="large" />
             </span>
+          </Link>
           </div>
-          <div className="cart-counter">0</div>
+          <div className="cart-counter">{cartCount}</div>
         </nav>
         {(menuOpen && screenWidth <= 768) && (
           <div className={menuOpen ? "nav-dropdown expanded" : "nav-dropdown"}>

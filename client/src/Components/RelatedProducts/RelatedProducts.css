@@ -1,0 +1,13 @@
+.related-products{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.related-products>h1{
+    text-align: center;
+}
+
+.related-products-items{
+    margin: 30px;
+    display: flex;
+    gap: 18px
+}
