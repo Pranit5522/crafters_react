@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NavDropdown(props){
     return(
-        <div className="nav-dropdown">
+        <div className="nav-dropdown" onClick={props.handleClick}>
             <Link to="/" className="brand-name-link" > <li className="nav-link">Home</li> </Link>
             <hr />
             <Link to="/categories" className="brand-name-link" > <li className="nav-link" >Collection</li> </Link>

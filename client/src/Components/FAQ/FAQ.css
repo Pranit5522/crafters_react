@@ -24,7 +24,7 @@
   }
   
   .answer {
-    color: #7d7d7d;
+    color: #191919;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 15px;
     font-size: 20px;
@@ -34,6 +34,6 @@
   }
   
   .answer.expanded {
-    max-height: 200px;
+    max-height: 250px;
   }
   

@@ -1,13 +1,15 @@
-import React from "react";
+import React, {useContext} from "react";
+import { ShopContext } from "../Context/ShopContext";
 import Hero from "../Components/Hero/Hero";
 import ItemSlider from "../Components/ItemSlider/ItemSlider";
-import products from "../Components/data/Products"
 import About from "../Components/About/About";
 import FAQ from "../Components/FAQ/FAQ";
 import Newsletter from "../Components/Newsletter/Newsletter";
 
 
 function Home(){
+
+    const { all_product } = useContext(ShopContext);
     return(
         <div>
             <Hero />
@@ -20,7 +22,7 @@ function Home(){
                     <a href="/categories">SEE ALL</a>
                 </div>
                 <ItemSlider 
-                    items={products}
+                    items={all_product}
                 />
             </div>
             <About />

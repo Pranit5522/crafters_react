@@ -18,6 +18,7 @@ function CartItems() {
     const subtotal = getSubtotal(); 
 
     return (
+        <div className="centre-container">
         <div className="cartItems">
             <div className="cartItems-heading">
                 <p>Products</p>
@@ -62,18 +63,19 @@ function CartItems() {
                     <hr />
                     <div className="cartItems-total-item">
                         <h3>Total</h3>
-                        <h3>${subtotal}</h3>
+                        <h3>₹{subtotal}</h3>
                     </div>
                     <button>PROCEED TO CHECKOUT</button>
                 </div>
                 <div className="cartItems-promocode">
                     <p>If you have a promo code, Enter it here</p>
                     <div className="cartItems-promobox">
-                        <input type="text" placeholder="Promo Code" />
+                        <input type="text" name = "promoCode" placeholder="Promo Code" />
                         <button>Submit</button>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

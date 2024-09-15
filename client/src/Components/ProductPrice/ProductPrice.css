@@ -132,3 +132,9 @@
 .qty-dropdown::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
+
+@media screen and (max-width: 450px) {
+    .productPrice > h2 {
+        font-size: 25px;
+    }
+}

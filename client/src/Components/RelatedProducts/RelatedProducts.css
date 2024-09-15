@@ -8,6 +8,19 @@
 
 .related-products-items{
     margin: 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 18px
+}
+
+@media screen and (max-width: 900px) {
+    .related-products-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .related-products-items {
+        grid-template-columns: 1fr;
+    }
 }

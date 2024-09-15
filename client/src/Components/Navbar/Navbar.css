@@ -9,7 +9,7 @@
 }
 .navbar-left, .navbar-right{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
   gap: 50px;
 }
@@ -18,7 +18,7 @@
   background-color: #313131;
   position: absolute;
   padding: 0;
-  width: 97.5%;
+  width: 100%;
   transition: height 0.3s ease;
   z-index: 1000;
 }
@@ -87,6 +87,22 @@
   font-size: 14px;
   background-color: #191919;
   color:#fdf8f3;
+}
+
+@media screen and (max-width: 560px) {
+  .cart-counter{
+    width: 15px;
+    height: 15px;
+    font-size: 9px;
+    right: 48px;
+    top: 10px;
+  }
+  .navbar-left{
+    padding-left: 20px;
+  }
+  .navbar-right{
+    padding-right: 20px;
+  }
 }
 
 .brand-name-link {
