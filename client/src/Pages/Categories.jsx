@@ -1,6 +1,7 @@
 import React from "react";
 import Category from "../Components/Category/Category"
 import categories from "../Components/data/Categories_list";
+
 function Categories(){
     return(
         <div className='categories'>
@@ -14,6 +15,7 @@ function Categories(){
                     /> 
                 ))}
             </div>
+
         </div>
     )
 }

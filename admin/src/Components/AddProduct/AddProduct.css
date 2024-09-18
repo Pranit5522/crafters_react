@@ -1,0 +1,110 @@
+.add-product {
+    margin-left: 400px;
+    margin-top: 80px;
+    background-color: #E6DDD4;
+    min-height: calc(100vh - 80px);
+    width: calc(100% - 400px);
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+}
+
+.form{
+    background-color: #fdf8f3;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 80px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field-name{
+    color: #191919;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.text-input{
+    width: 100%;
+    background-color: #E6DDD4;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.price{
+    display: flex;
+    gap: 20px;
+}
+
+.price > div{
+    width: 100%;
+}
+
+.submit-button{
+    background-color: #191919;
+    color: #fdf8f3;
+    width: 200px;
+    height: 40px;
+    padding: 10px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.buttons .submit-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1000px) {
+    .add-product {
+        margin: 0;
+        width: 100%;
+    }
+    .price {
+        flex-direction: column;
+        gap: 0;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .form{
+        padding: 25px;
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .add-product{
+        padding: 10px;
+    }
+    .form{
+        padding: 10px;
+    }
+}

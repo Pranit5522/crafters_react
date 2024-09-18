@@ -1,0 +1,22 @@
+.upload-button{
+    background-color: #fdf8f3 !important;
+    color: #191919 !important;
+    border: 2px #191919 solid !important;
+    box-shadow: none !important;
+    height: 40px ;
+}
+
+.uploaded-files p{
+    font-size: 16px;
+}
+
+h4{
+    margin: 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .upload-button{
+        width: 200px;
+    }
+}

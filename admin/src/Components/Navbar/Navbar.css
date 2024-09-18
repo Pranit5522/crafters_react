@@ -1,0 +1,27 @@
+.navbar{
+    background-color: #191919;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.brand-logo{
+    height: 80px;
+}
+
+.brand-name{
+    color: #fdf8f3;
+    font-size: 30px;
+    margin: 0;
+}
+
+.admin-panel{
+    color: #ff5757;
+    margin: 0;
+}
